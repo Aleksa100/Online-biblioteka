@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="loginpage-styles.css">
+	<script src="loginpage.js"></script>
+</head>
+<body>
+	<div class="login-container" id="login-container">
+		<form onsubmit="submitForm(event)">
+			<h1>Login</h1>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+	<script>
+		function submitForm(event) {
+			event.preventDefault(); // prevent form submission
+			var usernameInput = document.getElementById("username");
+			var passwordInput = document.getElementById("password");
+			var username = usernameInput.value;
+			var password = passwordInput.value;
+			if (username === "myusername" && password === "mypassword") {
+				var loginContainer = document.getElementById("login-container");
+				loginContainer.style.display = "none"; // hide login container
+				window.location.href = "index.html"; // redirect to dashboard page
+			} else {
+				alert("Incorrect username or password. Please try again.");
+			}
+		}
+	</script>
+</body>
+</html>

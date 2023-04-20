@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online biblioteka</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/main.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="circle-container">
+            <div class="circle"></div>
+            <div class="text-container">
+                <div class="name">Ivan Doncevic</div>
+                <div class="greeting">Dobrodosao, Ivane.</div>
+            </div>
+        </div>
+        <form>
+            <input type="text" id="search-bar" name="search-bar" placeholder="Pretraži..." />
+            <a href="#">
+                <img src="/images/viber_slika_2023-04-20_08-33-33-350.png" alt="" id="lupa">
+            </a>
+        </form>
+        <nav>
+
+
+
+
+            <a href="#side-drwer" class="nav-btn">
+                <img src="images/menubtn.png" alt="Description of the image">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Predmeti:</h1>
+        <section id="latest-products">
+            <ul id="predmeti">
+                <li class="food-item">
+                    <article>
+                        <img src="images/fizika2.jpg" alt="Delicious risotto with tiger prawns" />
+                        <div class="food-item-content">
+                            <h2>Fizika za 1. razred</h2>
+                            <a href="" class="btn">Udi</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="food-item">
+                    <article>
+                        <img src="images/matematika-1.jpg" alt="Classic cheeseburgers with fries" />
+                        <div class="food-item-content">
+                            <h2>Matematika za 1. razred</h2>
+                            <a href="" class="btn">Udi</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="food-item">
+                    <article>
+                        <img src="images/Bilologija.jpg" alt="Delicious risotto with tiger prawns" />
+                        <div class="food-item-content">
+                            <h2>Biologija za 1. razred</h2>
+                            <a href="" class="btn">Udi</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="food-item">
+                    <article>
+                        <img src="images/Hemija-2.jpg" alt="Delicious risotto with tiger prawns" />
+                        <div class="food-item-content">
+                            <h2>Hemija za 1. razred</h2>
+                            <a href="" class="btn">Udi</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h1 id="popularne-knjige">Popularne knjige:</h1>
+        <ul id="lista-knjiga">
+            <li class="knjiga">
+                <div>
+                    <img src="/images/Lovac-u-zitu.webp" alt="">
+                    <a href="#">Lovac u zitu</a>
+                    <div class="pop-up">
+                        <p><strong>Pisac:</strong> Derom Dejvid Selinger
+                            <br />
+                            <strong>Broj strana:</strong> 234
+                            <br />
+                            <strong>Knjitevna vrsta:</strong> roman
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="knjiga">
+                <div>
+                    <img src="/images/rani_jadi_vv.jpg" alt="">
+                    <a href="#">Rani jadi</a>
+                    <div class="pop-up">
+                        <p><strong>Pisac:</strong> Danilo kis
+                            <br />
+                            <strong>Broj strana:</strong> 73
+                            <br />
+                            <strong>Knjitevna vrsta:</strong> zbirka pripovjetki
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="knjiga">
+                <div>
+                    <img src="/images/one-piece.jpg" alt="">
+                    <a href="#">One piece</a>
+                    <div class="pop-up">
+                        <p><strong>Pisac:</strong> Ichiro Oda
+                            <br />
+                            <strong>Broj djelova</strong> 1076
+                            <br />
+                            <strong>Knjitevna vrsta:</strong> manga
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="knjiga">
+                <div>
+                    <img src="/images/novi-zavet-sinod.jpg" alt="">
+                    <a href="#">Biblija</a>
+                    <div class="pop-up">
+                        <p><strong>Pisac:</strong> Nepoznat
+                            <br />
+                            <strong>Broj strana:</strong> 1504
+                            <br />
+                            <strong>Knjitevna vrsta:</strong> vise vrsta u vise knjiga
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="knjiga">
+                <div>
+                    <img src="/images/Njegos-Gorski.png" alt="">
+                    <a href="#">Gorski vijenac</a>
+                    <div class="pop-up">
+                        <p><strong>Pisac:</strong> Petar II Petrović Njegoš
+                            <br />
+                            <strong>Broj strana:</strong> 140
+                            <br />
+                            <strong>Knjitevna vrsta:</strong> zbirka pjesama
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </footer>
+
+    <aside id="side-drwer">
+        <header>
+            <a href="#" class="nav-btn">
+                <img src="images/menubtn.png" alt="Description of the image" height="100" width="50">
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="side-btn">Nadite knjigu</a>
+                </li>
+                <li>
+                    <a href="" class="side-btn">Moj profil</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <aside>
+
+    </aside>
+</body>
+
+</html>
